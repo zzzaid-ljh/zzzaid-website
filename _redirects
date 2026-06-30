@@ -1,6 +1,0 @@
-# 精准匹配根域名首页
-/ /index.html/index.html 200
-# 无斜杠自动补斜杠
-/*$ $1/ 301
-# 子页面读取对应文件夹index.html
-/* $1/index.html 200
