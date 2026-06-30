@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zzzaid-website",
+  "compatibility_date": "2026-06-30",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "best-earplugs-for-sleeping"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
