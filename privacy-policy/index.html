@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy – zzzaid.com</title>
-    <meta name="description" content="Privacy Policy for zzzaid.com – how we collect, use, and protect your personal data." />
+    <title>Privacy Policy – zzzaid.com | Sleep Product Reviews</title>
+    <meta name="description" content="zzzaid.com Privacy Policy: Learn how we use cookies, Amazon affiliate tracking, Google Analytics and protect your data under GDPR & CCPA." />
+    <!-- SEO 标准化Canonical链接，避免重复收录 -->
+    <link rel="canonical" href="https://zzzaid.com/privacy-policy/" />
     <style>
         * {
             margin: 0;
@@ -21,12 +23,16 @@
             flex-direction: column;
         }
         .container {
-            max-width: 820px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 24px;
         }
+        .content-wrap {
+            max-width: 820px;
+            margin: 0 auto;
+        }
 
-        /* ---------- 顶部合规披露（自动全站生效） ---------- */
+        /* ---------- 顶部FTC亚马逊联盟合规横幅 ---------- */
         .affiliate-disclosure {
             background: #f7f9fa;
             padding: 12px 20px;
@@ -47,7 +53,6 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 12px;
-            max-width: 1100px;
         }
         .site-branding {
             display: flex;
@@ -58,10 +63,13 @@
             display: inline-block;
             line-height: 0;
         }
+        /* 统一控制Logo尺寸，删除内联冲突style */
         .site-logo img {
-            height: 40px;
+            height: 52px;
             width: auto;
             display: block;
+            margin-right: 16px;
+            vertical-align: middle;
         }
         .site-tagline {
             font-size: 0.9rem;
@@ -87,10 +95,24 @@
             color: #4f46e5;
         }
 
+        /* ---------- 面包屑导航 ---------- */
+        .breadcrumbs {
+            font-size: 14px;
+            color: #6b7280;
+            padding: 16px 0;
+        }
+        .breadcrumbs a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
         /* ---------- 主内容 ---------- */
         .main-content {
             flex: 1;
-            padding: 40px 0 50px;
+            padding: 20px 0 50px;
         }
         .main-content h1 {
             font-size: 2rem;
@@ -114,6 +136,11 @@
             color: #1a1a2e;
             margin-bottom: 10px;
         }
+        .policy-section h3 {
+            font-size: 1.1rem;
+            margin: 12px 0 8px;
+            color: #27272a;
+        }
         .policy-section p {
             color: #374151;
             margin-bottom: 12px;
@@ -124,7 +151,7 @@
             color: #374151;
         }
         .policy-section ul li {
-            margin-bottom: 4px;
+            margin-bottom: 8px;
         }
         .policy-section a {
             color: #4f46e5;
@@ -136,19 +163,26 @@
 
         /* ---------- 页脚 ---------- */
         .site-footer {
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
             border-top: 1px solid #e5e7eb;
             color: #6b7280;
             font-size: 0.85rem;
             background: #ffffff;
         }
-        .site-footer a {
+        .footer-links {
+            margin: 10px 0;
+        }
+        .footer-links a {
             color: #4f46e5;
             text-decoration: none;
+            margin: 0 8px;
         }
-        .site-footer a:hover {
+        .footer-links a:hover {
             text-decoration: underline;
+        }
+        .site-footer p {
+            margin: 6px 0;
         }
 
         @media (max-width: 700px) {
@@ -159,32 +193,34 @@
             .site-tagline {
                 border-left: none;
                 padding-left: 0;
+                margin-top:6px;
             }
             .main-nav ul {
                 gap: 16px;
+                margin-top:10px;
             }
             .main-content h1 {
                 font-size: 1.6rem;
             }
             .site-logo img {
-                height: 32px;
+                height: 40px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- 👇👇👇 亚马逊FTC合规披露（全站必须加，已放在最顶部）👇👇👇 -->
+    <!-- FTC 亚马逊联盟顶部合规披露 -->
     <div class="affiliate-disclosure">
-        This page contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases at no extra cost to you.
+        This page contains Amazon affiliate links. As an Amazon Associate, zzzaid.com earns a small commission from qualifying purchases at no extra cost to you. Product prices & availability are subject to change without notice.
     </div>
 
-    <!-- ===== 顶部导航 ===== -->
+    <!-- 顶部导航栏 -->
     <header class="site-header">
         <div class="container">
             <div class="site-branding">
                 <a href="/" class="site-logo">
-                    <img src="images/logo.png" alt="Logo" style="height: 52px; margin-right: 16px; vertical-align: middle;">
+                    <img src="images/logo.png" alt="zzzaid.com Sleep Product Reviews Logo">
                 </a>
                 <span class="site-tagline">Sleep Product Reviews</span>
             </div>
@@ -200,104 +236,127 @@
         </div>
     </header>
 
-    <!-- ===== 主内容 ===== -->
     <main class="main-content">
-        <div class="container">
+        <div class="container content-wrap">
+            <!-- 面包屑导航 -->
+            <div class="breadcrumbs">
+                <a href="/">Home</a> &rsaquo; Privacy Policy
+            </div>
 
             <h1>Privacy Policy</h1>
             <p class="last-updated">Last updated: June 29, 2026</p>
 
             <div class="policy-section">
-                <h2>Introduction</h2>
+                <h2>1. Introduction</h2>
                 <p>
-                    At zzzaid.com, we respect your privacy. This policy explains what minimal data
-                    we collect, how we use it, and your rights under GDPR and UK GDPR.
+                    At zzzaid.com, we fully respect your online privacy. This Privacy Policy outlines the limited data we collect, how third-party tools process visitor data, and your legal rights under the EU GDPR, UK GDPR, and California CCPA regulations.
+                </p>
+                <p>
+                    This website is an independent sleep product review site and is not affiliated, sponsored, or endorsed by Amazon or any other brand featured in our articles.
                 </p>
             </div>
 
             <div class="policy-section">
-                <h2>Contact</h2>
-                <p>
-                    If you have any questions about this policy, you can reach us at:
-                    <a href="mailto:contact@zzzaid.com">contact@zzzaid.com</a>
+                <h2>2. Site Operator & Contact Information</h2>
+                <p>Website Operator: Independent Review Publisher</p>
+                <p>Email: <a href="mailto:contact@zzzaid.com">contact@zzzaid.com</a></p>
+                <p>Mailing Address (for legal correspondence):<br>
+                Legal Support, zzzaid.com, PO Box 1028, Hong Kong
                 </p>
             </div>
 
             <div class="policy-section">
-                <h2>What Data We Collect</h2>
+                <h2>3. Amazon Affiliate Disclosure (FTC Required)</h2>
                 <p>
-                    As a static website, we do not collect or store any personal data directly.
-                    However, we use the following third-party services that may collect anonymous
-                    usage data:
+                    zzzaid.com participates in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising commission by linking to Amazon.com.
                 </p>
                 <ul>
-                    <li>
-                        <strong>Google Analytics</strong> — collects anonymized information about
-                        page visits, such as which pages are viewed and how long visitors stay.
-                        This helps us understand what content is useful. You can opt out using
-                        the
-                        <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank" rel="noopener noreferrer">Google opt-out add-on</a>.
-                    </li>
-                    <li>
-                        <strong>Amazon Associates</strong> — when you click an affiliate link,
-                        Amazon may place a cookie on your browser to track referrals. See
-                        <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ" target="_blank" rel="noopener noreferrer">Amazon's Privacy Policy</a>
-                        for more details.
-                    </li>
+                    <li>When you click any Amazon product link on this website and complete a qualifying purchase, we receive a small commission at zero additional cost to you.</li>
+                    <li>All product prices, ratings, and stock status displayed in our reviews are real-time data from Amazon and may change without prior notice.</li>
+                    <li>We do not manipulate product ratings or receive preferential pricing from Amazon. All reviews are independent, unbiased testing results.</li>
+                    <li>Cookies will be stored on your device by Amazon to track referral traffic generated from our website.</li>
                 </ul>
             </div>
 
             <div class="policy-section">
-                <h2>Cookies</h2>
+                <h2>4. What Anonymous Data We Collect</h2>
                 <p>
-                    We use minimal cookies for analytics and affiliate tracking. These do not
-                    collect personally identifiable information. You can control or delete cookies
-                    through your browser settings.
+                    This is a fully static website. We do not collect, store, or request any personally identifiable information (PII) directly from visitors. Anonymous usage data is collected by two third-party services:
                 </p>
-                <p>
-                    Some articles may contain embedded content (e.g., YouTube videos). These third
-                    parties may set their own cookies. We recommend reviewing their privacy
-                    policies for more information.
+                <h3>Google Analytics</h3>
+                <p>Collects anonymized metrics including page views, session duration, device type, and geographic traffic source to improve our review content. All data is stripped of personal identifiers and stored by Google for 26 months.</p>
+                <p>You can opt out of Google Analytics tracking via the official browser add-on:
+                    <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank" rel="sponsored noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.
+                </p>
+
+                <h3>Amazon Associates Tracking</h3>
+                <p>When you interact with Amazon affiliate links, Amazon stores third-party cookies to track referral sales. For full details, review Amazon’s official privacy policy:
+                    <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ" target="_blank" rel="sponsored noopener noreferrer">Amazon Privacy Notice</a>.
                 </p>
             </div>
 
             <div class="policy-section">
-                <h2>Data Sharing</h2>
+                <h2>5. Cookie Classification & Usage</h2>
+                <p>We deploy three limited cookie categories on this website:</p>
+                <ul>
+                    <li><strong>Necessary Affiliate Cookies:</strong> Placed by Amazon to track commission referrals. Cannot be disabled without breaking affiliate link functionality.</li>
+                    <li><strong>Analytics Cookies:</strong> Google Analytics anonymous traffic tracking cookies, fully optional to opt out.</li>
+                    <li><strong>Third-Party Embedded Content Cookies:</strong> If we embed videos or external tools, these platforms may set their own tracking cookies.</li>
+                </ul>
+                <p>You can block or delete all third-party cookies permanently through your browser’s privacy settings (Chrome, Safari, Firefox, Edge). Disabling cookies will not block core website reading functionality.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>6. Cross-Border Data Transfer</h2>
                 <p>
-                    We do not sell, trade, or share your personal data with anyone. The only data
-                    sharing that occurs is through the third-party services mentioned above
-                    (Google Analytics and Amazon), which operate under their own privacy policies.
+                    Anonymous visitor data collected by Google Analytics and Amazon will be transferred and stored on servers located within the United States. Data protection standards in the US may differ from EU/UK GDPR regulations. By continuing to browse this site, you consent to this cross-border data transmission.
                 </p>
             </div>
 
             <div class="policy-section">
-                <h2>Your Rights</h2>
+                <h2>7. Data Sharing Policy</h2>
                 <p>
-                    Since we do not store personal data directly, there is no data to export or
-                    delete. However, if you have any concerns, you are always welcome to contact
-                    us at <a href="mailto:contact@zzzaid.com">contact@zzzaid.com</a>.
+                    We will never sell, rent, trade, or distribute your personal or anonymous browsing data to any third-party advertisers, marketing companies, or data brokers. The only limited data sharing occurs automatically via Google Analytics and Amazon’s own tracking systems, governed by their separate privacy policies.
                 </p>
             </div>
 
             <div class="policy-section">
-                <h2>Changes to This Policy</h2>
+                <h2>8. Your Legal Rights</h2>
+                <h3>GDPR / UK GDPR Visitors (EU & United Kingdom)</h3>
+                <p>You hold the right to access, restrict, or erase any data linked to your browsing activity. Since we hold zero personal data on our servers, all data deletion requests must be submitted directly to Google or Amazon.</p>
+
+                <h3>CCPA Rights (California Residents)</h3>
+                <p>Under the California Consumer Privacy Act, you have the right to request disclosure of third-party data collection and opt out of "sale of personal data". zzzaid.com does not sell any visitor data under any circumstances, and no opt-out request is required for data sales.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>9. Modifications to This Policy</h2>
                 <p>
-                    We may update this policy occasionally. Any changes will be posted on this page
-                    with an updated date.
+                    We reserve the right to update this privacy policy to comply with new legal rules or website functionality changes. All updates will be published on this page with a revised "Last Updated" date at the top of the document. Continued site use after updates counts as acceptance of the revised policy.
                 </p>
             </div>
 
         </div>
     </main>
 
-    <!-- ===== 页脚 ===== -->
+    <!-- 统一合规页脚 -->
     <footer class="site-footer">
         <div class="container">
-            <p>
-                &copy; 2026 <a href="/">zzzaid.com</a> &bull;
-                <a href="/privacy-policy">Privacy Policy</a> &bull;
-                As an Amazon Associate I earn from qualifying purchases.
-            </p>
+            <p>&copy; 2026 <a href="/">zzzaid.com</a> All Rights Reserved</p>
+            <div class="footer-links">
+                <a href="/">Home</a> |
+                <a href="/best-white-noise-machine">White Noise Machines</a> |
+                <a href="/best-headphone-for-sleeping">Sleep Headphones</a> |
+                <a href="/best-earplugs-for-sleeping">Sleep Earplugs</a> |
+                <a href="/best-wake-up-lights">Wake-Up Lights</a>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <!-- 预留服务条款入口，后续新建页面直接启用 -->
+                <a href="/terms-of-service/">Terms of Service</a>
+            </div>
+            <p>As an Amazon Associate, zzzaid.com earns commission from qualifying purchases at no extra cost to buyers.</p>
+            <p class="disclaimer">All product prices and availability are subject to change without prior notice.</p>
         </div>
     </footer>
 
