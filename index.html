@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NDCCW4TJ');</script>
-<!-- End Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NDCCW4TJ');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <title>zzzaid.com – Sleep Product Reviews & Recommendations</title>
     <meta name="description" content="Expert reviews of the best white noise machines, sleep headphones, earplugs, and sunrise alarm clocks. Find your perfect sleep solution." />
+
     <style>
-        /* ---------- 全局重置 ---------- */
+        /* 全局重置 */
         * {
             margin: 0;
             padding: 0;
@@ -36,7 +46,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             padding: 0 24px;
         }
 
-        /* ---------- 顶部导航 ---------- */
+        /* FTC 合规顶部横幅 */
+        .ftc-disclosure {
+            background: #f7f9fa;
+            padding: 12px 20px;
+            font-size: 14px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* 网站头部导航 */
         .site-header {
             background: #ffffff;
             padding: 18px 0;
@@ -52,13 +71,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             gap: 12px;
         }
 
+        .site-branding {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
         .site-logo {
+            display: flex;
+            align-items: center;
             font-size: 1.8rem;
             font-weight: 700;
             color: #1a1a2e;
             text-decoration: none;
             letter-spacing: -0.5px;
         }
+
+        .site-logo img {
+            height: 52px;
+            width: auto;
+            margin-right: 16px;
+            vertical-align: middle;
+        }
+
         .site-logo span {
             color: #4f46e5;
         }
@@ -83,13 +118,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             color: #374151;
             font-weight: 500;
             font-size: 0.95rem;
-            transition: color 0.2s;
+            transition: color 0.2s ease;
         }
+
         .main-nav a:hover {
             color: #4f46e5;
         }
 
-        /* ---------- 主内容 ---------- */
+        /* 主内容区 */
         .main-content {
             flex: 1;
             padding: 50px 0 40px;
@@ -112,10 +148,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin: 0 auto 40px;
         }
 
-        /* ----- 四个卡片：始终一行，缩小尺寸 ----- */
+        /* 导航卡片 */
         .cards-row {
             display: flex;
-            flex-wrap: nowrap;          /* 强制不换行 */
+            flex-wrap: nowrap;
             gap: 20px;
             justify-content: center;
             align-items: stretch;
@@ -123,8 +159,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
 
         .nav-card {
-            flex: 1 1 0;                /* 平均分配宽度 */
-            min-width: 0;               /* 防止溢出 */
+            flex: 1 1 0;
+            min-width: 0;
             background: #ffffff;
             border-radius: 14px;
             padding: 20px 16px 18px;
@@ -138,29 +174,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             flex-direction: column;
             align-items: center;
         }
+
         .nav-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
             border-color: #d1d9e6;
         }
 
-        /* 图标缩小 */
         .nav-card .icon {
-            font-size: 2rem;            /* 原 2.8rem */
+            font-size: 2rem;
             margin-bottom: 6px;
         }
 
-        /* 标题缩小 */
         .nav-card h3 {
-            font-size: 1rem;            /* 原 1.2rem */
+            font-size: 1rem;
             font-weight: 700;
             margin-bottom: 4px;
             color: #1a1a2e;
         }
 
-        /* 描述文字缩小，并截断防止溢出 */
         .nav-card p {
-            font-size: 0.8rem;          /* 原 0.92rem */
+            font-size: 0.8rem;
             color: #4b5563;
             margin-bottom: 12px;
             line-height: 1.4;
@@ -168,14 +202,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 2;       /* 最多两行 */
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
 
-        /* 按钮缩小 */
         .nav-card .btn {
             display: inline-block;
-            background-color: #4f46e5;
             color: #fff;
             padding: 6px 18px;
             border-radius: 50px;
@@ -184,32 +216,94 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             transition: background-color 0.2s;
             white-space: nowrap;
         }
-        .nav-card .btn:hover {
-            background-color: #4338ca;
-        }
 
-        /* 不同卡片按钮颜色（微调） */
         .card-1 .btn { background-color: #4f46e5; }
         .card-2 .btn { background-color: #0d9488; }
         .card-3 .btn { background-color: #d97706; }
         .card-4 .btn { background-color: #7c3aed; }
 
-        /* ---------- White Noise 内容样式 ---------- */
+        /* 白噪音内容区块 */
         .white-noise-section {
             background: #fff;
             border-radius: 12px;
             padding: 40px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         }
+
         .white-noise-section h2 {
             font-size: 2rem;
             margin-bottom: 10px;
             color: #1a1a2e;
         }
+
         .white-noise-section .page-subtitle {
             color: #6b7280;
             font-size: 1rem;
             margin-bottom: 30px;
+        }
+
+        /* 对比表格 */
+        .comparison-table {
+            margin: 30px 0 40px;
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .comparison-table h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 6px;
+        }
+
+        .comparison-table .table-desc {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            min-width: 700px;
+        }
+
+        .product-table thead tr {
+            background: #1e293b;
+            color: white;
+            text-align: left;
+        }
+
+        .product-table th,
+        .product-table td {
+            padding: 10px 12px;
+        }
+
+        .product-table tbody tr {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .product-table tbody tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .product-table a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .table-note {
+            color: #6b7280;
+            font-size: 0.8rem;
+            margin-top: 12px;
         }
 
         /* 产品卡片 */
@@ -220,24 +314,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             border-bottom: 1px solid #e5e7eb;
             align-items: flex-start;
         }
+
         .product:last-child {
             border-bottom: none;
         }
+
         .product-image {
             flex: 0 0 180px;
             text-align: center;
         }
+
         .product-image img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             background: #f9fafb;
+            loading: lazy;
         }
+
         .product-info {
             flex: 1;
             min-width: 0;
         }
+
         .product-header {
             display: flex;
             align-items: baseline;
@@ -245,6 +345,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             gap: 10px;
             margin-bottom: 4px;
         }
+
         .product-rank {
             font-size: 0.75rem;
             font-weight: 700;
@@ -254,17 +355,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             border-radius: 20px;
             letter-spacing: 0.3px;
         }
+
         .product-title {
             font-size: 1.35rem;
             font-weight: 700;
             color: #1a1a2e;
         }
+
         .product-rating {
             color: #f59e0b;
             font-weight: 600;
             font-size: 0.95rem;
             margin-bottom: 10px;
         }
+
         .product-description {
             color: #374151;
             font-size: 0.95rem;
@@ -272,12 +376,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             line-height: 1.7;
         }
 
-        /* 优点缺点 */
-        .pros-list {
+        /* 优缺点 */
+        .pros-list, .cons-list {
             list-style: none;
             padding: 0;
-            margin: 0 0 8px 0;
+            margin: 0 0 16px 0;
         }
+
         .pros-list li {
             color: #065f46;
             font-size: 0.92rem;
@@ -286,6 +391,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             align-items: flex-start;
             gap: 8px;
         }
+
         .pros-list li::before {
             content: "✓";
             color: #10b981;
@@ -293,11 +399,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: 1rem;
             flex-shrink: 0;
         }
-        .cons-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 16px 0;
-        }
+
         .cons-list li {
             color: #991b1b;
             font-size: 0.92rem;
@@ -306,6 +408,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             align-items: flex-start;
             gap: 8px;
         }
+
         .cons-list li::before {
             content: "✗";
             color: #dc2626;
@@ -328,11 +431,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             border: none;
             cursor: pointer;
         }
+
         .product-link:hover {
             background-color: #e68a00;
         }
 
-        /* ---------- 页脚 ---------- */
+        /* 页脚 */
         .site-footer {
             padding: 20px 0;
             text-align: center;
@@ -341,15 +445,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: 0.85rem;
             background: #ffffff;
         }
+
         .site-footer a {
             color: #4f46e5;
             text-decoration: none;
         }
+
         .site-footer a:hover {
             text-decoration: underline;
         }
 
-        /* ---------- 响应式 ---------- */
+        /* 移动端适配 */
         @media (max-width: 700px) {
             .site-header .container {
                 flex-direction: column;
@@ -379,7 +485,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
             .nav-card p {
                 font-size: 0.7rem;
-                -webkit-line-clamp: 2;
             }
             .nav-card .btn {
                 font-size: 0.7rem;
@@ -391,11 +496,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .product {
                 flex-direction: column;
                 align-items: center;
-                text-align: left;
                 gap: 16px;
             }
             .product-image {
-                flex: unset;
                 width: 160px;
             }
             .product-header {
@@ -411,7 +514,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 gap: 8px;
             }
             .nav-card {
-                padding: 10px 6px 10px;
+                padding: 10px 6px;
             }
             .nav-card .icon {
                 font-size: 1.4rem;
@@ -429,22 +532,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </style>
 </head>
+
 <body>
-
-    <!-- 👇👇👇 亚马逊 FTC 强制合规条（已加好！）👇👇👇 -->
-    <div style="background:#f7f9fa; padding:12px 20px; font-size:14px; text-align:center; border-bottom:1px solid #eee;">
-This page contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases at no extra cost to you.
+    <!-- FTC 亚马逊联盟合规披露 -->
+    <div class="ftc-disclosure">
+        This page contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases at no extra cost to you.
     </div>
-     <div id="global-header"></div>
 
-    <!-- ===== 顶部导航 ===== -->
+    <!-- 网站导航头部 -->
     <header class="site-header">
         <div class="container">
             <div class="site-branding">
-<a href="/" class="site-logo">
-    <img src="images/logo.png" alt="Logo" style="height: 52px; margin-right: 16px; vertical-align: middle;" loading="lazy">
-    zzzaid<span>.com</span>
-</a>
+                <a href="/" class="site-logo">
+                    <img src="images/logo.png" alt="zzzaid.com Logo">
+                    zzzaid<span>.com</span>
+                </a>
                 <span class="site-tagline">Sleep Product Reviews</span>
             </div>
             <nav class="main-nav">
@@ -458,7 +560,7 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
         </div>
     </header>
 
-    <!-- ===== 主内容：四个导航卡片 + 嵌入 White Noise 内容 ===== -->
+    <!-- 主内容区域 -->
     <main class="main-content">
         <div class="container">
             <h1>Find Your Perfect Sleep Solution</h1>
@@ -491,268 +593,342 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                 </a>
             </div>
 
-            <!-- ========== 已嵌入：White Noise 完整内容 ========== -->
+            <!-- 白噪音产品列表 -->
             <div class="white-noise-section">
                 <h2>The 10 Best White Noise Machines of 2026</h2>
                 <p class="page-subtitle">🔊 Top Sound Machines for Sleep &amp; Office — Expert Reviews &amp; Recommendations</p>
 
-                <!-- 对比表格 -->
-                <section style="margin: 30px 0 40px 0; background: #f8fafc; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                    <h2 style="font-size: 1.4rem; font-weight: 700; color: #1a1a2e; margin-bottom: 6px;">📊 At-a-Glance Comparison</h2>
-                    <p style="color: #6b7280; font-size: 0.95rem; margin-bottom: 20px;">All 10 picks side by side — find your match in seconds</p>
-                    <div style="overflow-x: auto;">
-                        <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 700px;">
+                <div class="comparison-table">
+                    <h2>📊 At-a-Glance Comparison</h2>
+                    <p class="table-desc">All 10 picks side by side — find your match in seconds</p>
+                    <div class="table-wrap">
+                        <table class="product-table">
                             <thead>
-                                <tr style="background: #1e293b; color: white; text-align: left;">
-                                    <th style="padding: 10px 12px; border-radius: 8px 0 0 0;">Product</th>
-                                    <th style="padding: 10px 12px;">Price</th>
-                                    <th style="padding: 10px 12px;">Sound Type</th>
-                                    <th style="padding: 10px 12px; text-align: center;">Timer</th>
-                                    <th style="padding: 10px 12px; text-align: center;">Nightlight</th>
-                                    <th style="padding: 10px 12px; text-align: center;">Bluetooth</th>
-                                    <th style="padding: 10px 12px; text-align: center;">Battery</th>
-                                    <th style="padding: 10px 12px; border-radius: 0 8px 0 0; text-align: center;">Headphone</th>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Sound Type</th>
+                                    <th style="text-align:center">Timer</th>
+                                    <th style="text-align:center">Nightlight</th>
+                                    <th style="text-align:center">Bluetooth</th>
+                                    <th style="text-align:center">Battery</th>
+                                    <th style="text-align:center">Headphone</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr style="border-bottom: 1px solid #e2e8f0;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/4gakPqh" target="_blank" style="color: #2563eb; text-decoration: none;">Snooz Original</a></td>
-                                    <td style="padding: 10px 12px;">$$$</td>
-                                    <td style="padding: 10px 12px;">Real Fan</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4gakPqh" target="_blank" rel="noopener noreferrer">Snooz Original</a></td>
+                                    <td>$$$</td>
+                                    <td>Real Fan</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/4xUdMZj" target="_blank" style="color: #2563eb; text-decoration: none;">Snooz Pro</a></td>
-                                    <td style="padding: 10px 12px;">$$$</td>
-                                    <td style="padding: 10px 12px;">Real Fan</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4xUdMZj" target="_blank" rel="noopener noreferrer">Snooz Pro</a></td>
+                                    <td>$$$</td>
+                                    <td>Real Fan</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/4vLFmXg" target="_blank" style="color: #2563eb; text-decoration: none;">LectroFan Evo</a></td>
-                                    <td style="padding: 10px 12px;">$$</td>
-                                    <td style="padding: 10px 12px;">10 WN + 10 Fan + 2 Ocean</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4vLFmXg" target="_blank" rel="noopener noreferrer">LectroFan Evo</a></td>
+                                    <td>$$</td>
+                                    <td>10 WN + 10 Fan + 2 Ocean</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center">✓</td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/44EZ9eQ" target="_blank" style="color: #2563eb; text-decoration: none;">LectroFan Classic</a></td>
-                                    <td style="padding: 10px 12px;">$$</td>
-                                    <td style="padding: 10px 12px;">10 WN + 10 Fan</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/44EZ9eQ" target="_blank" rel="noopener noreferrer">LectroFan Classic</a></td>
+                                    <td>$$</td>
+                                    <td>10 WN + 10 Fan</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/4wny3VB" target="_blank" style="color: #2563eb; text-decoration: none;">Yogasleep Duet</a></td>
-                                    <td style="padding: 10px 12px;">$$</td>
-                                    <td style="padding: 10px 12px;">7 WN + 4 Fan + 9 Nature + 7 Music + 3 Baby</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4wny3VB" target="_blank" rel="noopener noreferrer">Yogasleep Duet</a></td>
+                                    <td>$$</td>
+                                    <td>7 WN + 4 Fan + 9 Nature + 7 Music + 3 Baby</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/4eNhr29" target="_blank" style="color: #2563eb; text-decoration: none;">Momcozy Portable</a></td>
-                                    <td style="padding: 10px 12px;">$</td>
-                                    <td style="padding: 10px 12px;">3 WN + 3 Fan + 8 Nature + 7 Music/Baby</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4eNhr29" target="_blank" rel="noopener noreferrer">Momcozy Portable</a></td>
+                                    <td>$</td>
+                                    <td>3 WN + 3 Fan + 8 Nature + 7 Music/Baby</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/4y34Pgo" target="_blank" style="color: #2563eb; text-decoration: none;">Dreamegg D11 Max</a></td>
-                                    <td style="padding: 10px 12px;">$</td>
-                                    <td style="padding: 10px 12px;">3 WN + 3 Fan + 9 Nature + 6 Music/Baby</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4y34Pgo" target="_blank" rel="noopener noreferrer">Dreamegg D11 Max</a></td>
+                                    <td>$</td>
+                                    <td>3 WN + 3 Fan + 9 Nature + 6 Music/Baby</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/4oYp7n3" target="_blank" style="color: #2563eb; text-decoration: none;">LectroFan Micro 2</a></td>
-                                    <td style="padding: 10px 12px;">$</td>
-                                    <td style="padding: 10px 12px;">4 WN + 5 Fan + 2 Ocean</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4oYp7n3" target="_blank" rel="noopener noreferrer">LectroFan Micro 2</a></td>
+                                    <td>$</td>
+                                    <td>4 WN + 5 Fan + 2 Ocean</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0;">
-                                    <td style="padding: 10px 12px; font-weight: 600;"><a href="https://amzn.to/4gbWksR" target="_blank" style="color: #2563eb; text-decoration: none;">Yogasleep Dohm Nova</a></td>
-                                    <td style="padding: 10px 12px;">$$</td>
-                                    <td style="padding: 10px 12px;">Real Fan</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4gbWksR" target="_blank" rel="noopener noreferrer">Yogasleep Dohm Nova</a></td>
+                                    <td>$$</td>
+                                    <td>Real Fan</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
                                 </tr>
-                                <tr style="background: #f8fafc;">
-                                    <td style="padding: 10px 12px; font-weight: 600; border-radius: 0 0 0 8px;"><a href="https://amzn.to/4v2KKnp" target="_blank" style="color: #2563eb; text-decoration: none;">Easysleep</a></td>
-                                    <td style="padding: 10px 12px;">$</td>
-                                    <td style="padding: 10px 12px;">4 WN + 4 Fan + 12 Nature + 5 Music</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;">✓</td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center;"></td>
-                                    <td style="padding: 10px 12px; text-align: center; border-radius: 0 0 8px 0;"></td>
+                                <tr>
+                                    <td><a href="https://amzn.to/4v2KKnp" target="_blank" rel="noopener noreferrer">Easysleep</a></td>
+                                    <td>$</td>
+                                    <td>4 WN + 4 Fan + 12 Nature + 5 Music</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center">✓</td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
+                                    <td style="text-align:center"></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.8rem; margin-top: 12px;">* WN = White Noise &nbsp;|&nbsp; $ = Budget (&lt;$40) &nbsp; $$ = Mid-range ($40–79) &nbsp; $$$ = Premium ($80+)</p>
-                </section>
+                    <p class="table-note">* WN = White Noise | $ = Budget (&lt;$40) | $$ = Mid-range ($40–79) | $$$ = Premium ($80+)</p>
+                </div>
 
-                <!-- 10个产品 -->
+                <!-- 产品卡片 -->
                 <div class="product">
-                    <div class="product-image"><img src="../images/snooz-original.jpg" alt="Snooz Original" loading="lazy"></div>
+                    <div class="product-image"><img src="images/snooz-original.jpg" alt="Snooz Original"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#1</span><h3 class="product-title">Snooz Original</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐⭐ 4.5/5</div>
                         <div class="product-description">Our top pick for real fan sound lovers — genuine mechanical fan inside for the most authentic, natural sound experience.</div>
-                        <ul class="pros-list"><li>Real mechanical fan — sounds far more natural than digital recordings</li><li>Adjustable tone and volume</li><li>Excellent noise masking</li><li>App-controlled daily timers</li></ul>
-                        <ul class="cons-list"><li>Timer only accessible via app</li><li>US plug only — adapter required</li></ul>
-                        <a href="https://amzn.to/4gakPqh" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>Real mechanical fan — sounds far more natural than digital recordings</li>
+                            <li>Adjustable tone and volume</li>
+                            <li>Excellent noise masking</li>
+                            <li>App-controlled daily timers</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>Timer only accessible via app</li>
+                            <li>US plug only — adapter required</li>
+                        </ul>
+                        <a href="https://amzn.to/4gakPqh" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/snooz-pro.jpg" alt="Snooz Pro" loading="lazy"></div>
+                    <div class="product-image"><img src="images/snooz-pro.jpg" alt="Snooz Pro"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#2</span><h3 class="product-title">Snooz Pro</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐ 4.4/5</div>
                         <div class="product-description">A more refined alternative to the Snooz Original — louder, sleeker, and travel-ready.</div>
-                        <ul class="pros-list"><li>Real mechanical fan</li><li>Slightly louder than Original</li><li>Modern design</li><li>Sturdy carry case included</li></ul>
-                        <ul class="cons-list"><li>Tone adjustment requires lifting the device</li></ul>
-                        <a href="https://amzn.to/4xUdMZj" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>Real mechanical fan</li>
+                            <li>Slightly louder than Original</li>
+                            <li>Modern design</li>
+                            <li>Sturdy carry case included</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>Tone adjustment requires lifting the device</li>
+                        </ul>
+                        <a href="https://amzn.to/4xUdMZj" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/lectrofan-evo.jpg" alt="LectroFan Evo" loading="lazy"></div>
+                    <div class="product-image"><img src="images/lectrofan-evo.jpg" alt="LectroFan Evo"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#3</span><h3 class="product-title">LectroFan Evo</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐⭐ 4.5/5</div>
                         <div class="product-description">The ultimate choice for white, pink, and brown noise enthusiasts — 22 digitally generated sounds with exceptional clarity.</div>
-                        <ul class="pros-list"><li>22 non-looping sounds</li><li>Clear speaker with rich bass</li><li>Headphone jack</li><li>Auto-off timer</li></ul>
-                        <ul class="cons-list"><li>No nature sounds except ocean</li><li>Must be plugged in</li></ul>
-                        <a href="https://amzn.to/4vLFmXg" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>22 non-looping sounds</li>
+                            <li>Clear speaker with rich bass</li>
+                            <li>Headphone jack</li>
+                            <li>Auto-off timer</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>No nature sounds except ocean</li>
+                            <li>Must be plugged in</li>
+                        </ul>
+                        <a href="https://amzn.to/4vLFmXg" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/lectrofan-classic.jpg" alt="LectroFan Classic" loading="lazy"></div>
+                    <div class="product-image"><img src="images/lectrofan-classic.jpg" alt="LectroFan Classic"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#4</span><h3 class="product-title">LectroFan Classic</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐ 4.3/5</div>
                         <div class="product-description">The loudest white noise machine on the market — 79.9 dBA of pure sound masking power.</div>
-                        <ul class="pros-list"><li>Loudest overall — 79.9 dBA</li><li>20 digital sounds</li><li>Robust & long-lasting</li><li>Great value</li></ul>
-                        <ul class="cons-list"><li>No headphone jack</li></ul>
-                        <a href="https://amzn.to/44EZ9eQ" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>Loudest overall — 79.9 dBA</li>
+                            <li>20 digital sounds</li>
+                            <li>Robust & long-lasting</li>
+                            <li>Great value</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>No headphone jack</li>
+                        </ul>
+                        <a href="https://amzn.to/44EZ9eQ" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/yogasleep-duet.jpg" alt="Yogasleep Duet" loading="lazy"></div>
+                    <div class="product-image"><img src="images/yogasleep-duet.jpg" alt="Yogasleep Duet"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#5</span><h3 class="product-title">Yogasleep Duet</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐⭐ 4.6/5</div>
                         <div class="product-description">Premium sound machine designed for kids — lullabies, nightlight, and Bluetooth streaming in one elegant package.</div>
-                        <ul class="pros-list"><li>30 sounds including lullabies</li><li>Dimmable amber nightlight</li><li>Bluetooth speaker</li><li>Auto-off timers</li></ul>
-                        <ul class="cons-list"><li>Must be plugged in</li></ul>
-                        <a href="https://amzn.to/4wny3VB" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>30 sounds including lullabies</li>
+                            <li>Dimmable amber nightlight</li>
+                            <li>Bluetooth speaker</li>
+                            <li>Auto-off timers</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>Must be plugged in</li>
+                        </ul>
+                        <a href="https://amzn.to/4wny3VB" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/momcozy-portable.jpg" alt="Momcozy Portable" loading="lazy"></div>
+                    <div class="product-image"><img src="images/momcozy-portable.jpg" alt="Momcozy Portable"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#6</span><h3 class="product-title">Momcozy Portable</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐ 4.2/5</div>
                         <div class="product-description">The ultimate portable sound machine for parents — compact, bright nightlight, and child-safe features.</div>
-                        <ul class="pros-list"><li>Brightest dimmable nightlight</li><li>Bluetooth & child lock</li><li>Rechargeable battery (16+hrs)</li><li>21 sounds</li></ul>
-                        <ul class="cons-list"><li>Very short sound loops</li></ul>
-                        <a href="https://amzn.to/4eNhr29" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>Brightest dimmable nightlight</li>
+                            <li>Bluetooth & child lock</li>
+                            <li>Rechargeable battery (16+hrs)</li>
+                            <li>21 sounds</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>Very short sound loops</li>
+                        </ul>
+                        <a href="https://amzn.to/4eNhr29" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/dreamegg-d11max.jpg" alt="Dreamegg D11 Max" loading="lazy"></div>
+                    <div class="product-image"><img src="images/dreamegg-d11max.jpg" alt="Dreamegg D11 Max"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#7</span><h3 class="product-title">Dreamegg Sleep Lite D11 Max</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐ 4.1/5</div>
                         <div class="product-description">A solid alternative to the Momcozy with significantly longer sound loops and a more affordable price tag.</div>
-                        <ul class="pros-list"><li>Long sound loops (1:55)</li><li>21 sounds</li><li>Budget-friendly</li><li>Rechargeable battery</li></ul>
-                        <ul class="cons-list"><li>No nightlight</li><li>No child lock</li></ul>
-                        <a href="https://amzn.to/4y34Pgo" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>Long sound loops (1:55)</li>
+                            <li>21 sounds</li>
+                            <li>Budget-friendly</li>
+                            <li>Rechargeable battery</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>No nightlight</li>
+                            <li>No child lock</li>
+                        </ul>
+                        <a href="https://amzn.to/4y34Pgo" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/lectrofan-micro2.jpg" alt="LectroFan Micro 2" loading="lazy"></div>
+                    <div class="product-image"><img src="images/lectrofan-micro2.jpg" alt="LectroFan Micro 2"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#8</span><h3 class="product-title">LectroFan Micro 2</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐⭐ 4.5/5</div>
                         <div class="product-description">The best portable white noise machine for adults — palm-sized, 40-hour battery, and impressive sound quality.</div>
-                        <ul class="pros-list"><li>Palm-sized</li><li>40-hour battery</li><li>Bluetooth speaker</li><li>Clear sound at all volumes</li></ul>
-                        <ul class="cons-list"><li>No auto-off timer</li><li>Limited nature sounds</li></ul>
-                        <a href="https://amzn.to/4oYp7n3" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>Palm-sized</li>
+                            <li>40-hour battery</li>
+                            <li>Bluetooth speaker</li>
+                            <li>Clear sound at all volumes</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>No auto-off timer</li>
+                            <li>Limited nature sounds</li>
+                        </ul>
+                        <a href="https://amzn.to/4oYp7n3" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/yogasleep-dohm-nova.jpg" alt="Yogasleep Dohm Nova" loading="lazy"></div>
+                    <div class="product-image"><img src="images/yogasleep-dohm-nova.jpg" alt="Yogasleep Dohm Nova"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#9</span><h3 class="product-title">Yogasleep Dohm Nova</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐ 4.3/5</div>
                         <div class="product-description">The easiest-to-use real fan sound machine — plug and play with large physical buttons and a nightlight.</div>
-                        <ul class="pros-list"><li>Real mechanical fan</li><li>Large physical buttons</li><li>Dimmable nightlight</li><li>Physical timer buttons</li></ul>
-                        <ul class="cons-list"><li>Motor noise noticeable</li><li>Must be plugged in</li></ul>
-                        <a href="https://amzn.to/4gbWksR" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>Real mechanical fan</li>
+                            <li>Large physical buttons</li>
+                            <li>Dimmable nightlight</li>
+                            <li>Physical timer buttons</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>Motor noise noticeable</li>
+                            <li>Must be plugged in</li>
+                        </ul>
+                        <a href="https://amzn.to/4gbWksR" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
 
                 <div class="product">
-                    <div class="product-image"><img src="../images/easysleep.jpg" alt="Easysleep" loading="lazy"></div>
+                    <div class="product-image"><img src="images/easysleep.jpg" alt="Easysleep"></div>
                     <div class="product-info">
                         <div class="product-header"><span class="product-rank">#10</span><h3 class="product-title">Easysleep</h3></div>
                         <div class="product-rating">⭐⭐⭐⭐ 4.0/5</div>
                         <div class="product-description">The best budget-friendly white noise machine for adults — packed with features at an unbeatable price.</div>
-                        <ul class="pros-list"><li>25 sounds</li><li>Amber nightlight (4 levels)</li><li>Auto-off timers</li><li>Under $30</li></ul>
-                        <ul class="cons-list"><li>Must be plugged in</li><li>USB cable only</li></ul>
-                        <a href="https://amzn.to/4v2KKnp" class="product-link" target="_blank">Check Price on Amazon →</a>
+                        <ul class="pros-list">
+                            <li>25 sounds</li>
+                            <li>Amber nightlight (4 levels)</li>
+                            <li>Auto-off timers</li>
+                            <li>Under $30</li>
+                        </ul>
+                        <ul class="cons-list">
+                            <li>Must be plugged in</li>
+                            <li>USB cable only</li>
+                        </ul>
+                        <a href="https://amzn.to/4v2KKnp" class="product-link" target="_blank" rel="noopener noreferrer">Check Price on Amazon →</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-<!-- ====== 页脚 ====== -->
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2026 <a href="/">zzzaid.com</a> &bull; <a href="/privacy-policy/">Privacy Policy</a> &bull;
-        Contact：<a href="#" onclick="this.href='mailto:'+'contact'+'@'+'zzzaid.com'" style="text-decoration:none;">contact @ zzzaid.com</a>
-        &bull; As an Amazon Associate I earn from qualifying purchases.</p>
-    </div>
-</footer>
-
+    <!-- 网站页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 <a href="/">zzzaid.com</a> &bull; <a href="/privacy-policy/">Privacy Policy</a> &bull;
+            Contact: <a href="mailto:contact@zzzaid.com">contact@zzzaid.com</a>
+            &bull; As an Amazon Associate I earn from qualifying purchases.</p>
+        </div>
+    </footer>
 </body>
 </html>

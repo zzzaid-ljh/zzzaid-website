@@ -12,7 +12,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
     <title>The 10 Best Earplugs For Sleeping of 2026 – Top Earplugs for Noise Reduction & Comfort</title>
     <meta name="description" content="Best sleep earplugs for noise reduction, snoring and travel. Soft reusable & disposable earplug reviews and comparison.">
-<style>
     <style>
         * {
             margin: 0;
@@ -24,11 +23,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             background-color: #f5f6f8;
             color: #1a1a2e;
             line-height: 1.6;
-            padding: 30px 20px;
+        }
+        /* 联盟提示统一类 替换行间样式 */
+        .affiliate-notice {
+            background:#f7f9fa;
+            padding:12px 20px;
+            font-size:14px;
+            text-align:center;
+            border-bottom:1px solid #eee;
         }
         .container {
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 30px auto;
             background: white;
             padding: 40px 45px;
             border-radius: 12px;
@@ -149,9 +155,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .product-image img {
             max-width: 100%;
             height: auto;
+            min-height: 160px; /* 防止图片加载塌陷 */
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             background: #f9fafb;
+            object-fit: cover;
         }
 
         .product-info {
@@ -194,33 +202,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin-bottom: 14px;
             line-height: 1.7;
         }
-
+        /* 统一产品规格卡片 */
         .product-specs {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 16px 0;
+            border: 1px solid #e2e8f0;
+        }
+        .product-specs h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+        .spec-row {
             display: flex;
-            flex-wrap: wrap;
-            gap: 16px 24px;
-            margin-bottom: 14px;
+            gap: 8px;
             font-size: 0.9rem;
-            color: #4b5563;
-            background: #f9fafb;
-            padding: 10px 16px;
-            border-radius: 8px;
+            padding: 4px 0;
         }
-        .product-specs span {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-        .product-specs .label {
-            font-weight: 600;
+        .spec-label {
+            width: 100px;
             color: #6b7280;
+            font-weight: 500;
         }
 
         /* 优点列表 (绿色 ✓) */
         .pros-list {
             list-style: none;
             padding: 0;
-            margin: 0 0 8px 0;
+            margin: 0 8px 0 0;
         }
         .pros-list li {
             color: #065f46;
@@ -277,7 +288,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             background-color: #e68a00;
         }
 
-        .footer {
+        /* 相关推荐链接容器 */
+        .related-links {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+        .related-links p {
+            margin: 8px 0;
+            font-size: 0.95rem;
+            color: #374151;
+        }
+        .related-links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .related-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* 文章内页脚 */
+        .page-footer {
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
@@ -285,14 +317,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             color: #9ca3af;
             font-size: 0.85rem;
         }
+        /* 全站底部统一页脚 */
+        .site-footer {
+            margin-top:60px;
+            padding:25px 10px;
+            border-top:1px solid #eeeeee;
+            text-align:center;
+        }
+        .site-footer a {
+            color:#222;
+            text-decoration:none;
+            font-size:0.9rem;
+        }
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
 
         /* 移动端适配 */
         @media (max-width: 700px) {
             .container {
                 padding: 20px 18px;
+                margin: 15px;
             }
             h1 {
                 font-size: 1.6rem;
+                text-align: center;
+            }
+            .page-subtitle {
+                text-align: center;
             }
             .product {
                 flex-direction: column;
@@ -309,20 +361,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
             .product-title {
                 font-size: 1.15rem;
+                text-align: center;
+                width: 100%;
             }
-            .product-specs {
-                justify-content: center;
+            .product-rating {
+                text-align: center;
+                display:block;
+            }
+            .product-link {
+                display:block;
+                text-align:center;
+            }
+            .spec-row {
+                flex-direction: column;
+                gap:2px;
+            }
+            .spec-label {
+                width: auto;
+            }
+            .related-links p {
+                text-align:center;
             }
         }
     </style>
 </head>
 <body>
-    <!-- ========== 亚马逊FTC强制合规披露【加在这里！body标签下第一行】 ========== -->
-    <div style="background:#f7f9fa; padding:12px 20px; font-size:14px; text-align:center; border-bottom:1px solid #eee; margin-bottom:20px; border-radius:8px;">
+    <!-- 统一联盟提示 -->
+    <div class="affiliate-notice">
 This page contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases at no extra cost to you.
-    </div> 
+    </div>
     <div id="global-header"></div>
-
     <div class="container">
         <h1>The 10 Best Earplugs For Sleeping of 2026</h1>
         <p class="page-subtitle">
@@ -425,9 +493,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     The author's personal favorite for nightly use — highest noise reduction rating with exceptional comfort for side sleepers.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Small / Medium</span>
-                    <span><span class="label">NRR:</span> 33 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Small / Medium</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>33 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>Highest noise reduction rating of 33 dB — blocks out loud snoring and traffic</li>
@@ -458,9 +536,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     A great option for medium to larger ears — effective noise blocking with an easy-removal bell shape.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Medium / Large</span>
-                    <span><span class="label">NRR:</span> 32 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Medium / Large</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>32 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>32 dB noise reduction — blocks a lot of noise effectively</li>
@@ -490,9 +578,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     Impressive 33 dB noise reduction with a larger diameter — ideal for people with larger or medium-sized ears.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Large</span>
-                    <span><span class="label">NRR:</span> 33 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Large</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>33 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>Maximum 33 dB noise reduction rating</li>
@@ -521,9 +619,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     Considerably softer than the Xtreme Protection — great for sleeping with a similar shape and size to Mack's Ultra Soft.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Small</span>
-                    <span><span class="label">NRR:</span> 32 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Small</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>32 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>32 dB noise reduction — high level of protection</li>
@@ -553,9 +661,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     Industrial-grade earplugs with superb noise blocking — ideal for occasional use when you need solid noise reduction.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Medium / Large</span>
-                    <span><span class="label">NRR:</span> 29 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Medium / Large</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>29 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>Superb noise blocking despite the 29 dB rating — very effective</li>
@@ -584,9 +702,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     Highly effective earplugs with a unique winged tip design — easy to grip and remove, best for medium to large ears.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Large</span>
-                    <span><span class="label">NRR:</span> 32 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Large</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>32 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>32 dB noise reduction — highly effective at blocking noise</li>
@@ -616,9 +744,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     Similar shape to Laser Lite but slightly smaller — better suited for medium-sized ear canals with effective noise blocking.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Medium</span>
-                    <span><span class="label">NRR:</span> 30 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Medium</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>30 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>30 dB noise reduction — effective at blocking noise</li>
@@ -648,9 +786,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     High 33 dB noise reduction with a longer design — excellent for people with deeper ear canals.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Medium / Large</span>
-                    <span><span class="label">NRR:</span> 33 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Medium / Large</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>33 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>Maximum 33 dB noise reduction rating</li>
@@ -681,9 +829,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     Similar to Moldex Soft Foam with the same 33 dB rating — bright colors make them easy to spot.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Medium / Large</span>
-                    <span><span class="label">NRR:</span> 33 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Medium / Large</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>33 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>Maximum 33 dB noise reduction rating</li>
@@ -713,9 +871,19 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     Manufactured by Moldex and distributed by Flents — similar design and 33 dB rating, available in smaller packs.
                 </div>
                 <div class="product-specs">
-                    <span><span class="label">Material:</span> Foam</span>
-                    <span><span class="label">Size:</span> Medium</span>
-                    <span><span class="label">NRR:</span> 33 dB</span>
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Material:</span>
+                        <span>Foam</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size:</span>
+                        <span>Medium</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">NRR:</span>
+                        <span>33 dB</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>Maximum 33 dB noise reduction rating</li>
@@ -731,15 +899,22 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
             </div>
         </div>
 
-        <div class="footer">
+        <!-- 文章内页脚 -->
+        <div class="page-footer">
             <p>© 2026 zzzaid.com &nbsp;|&nbsp; As an Amazon Associate I earn from qualifying purchases.</p>
         </div>
-        If you want relaxing background sound while sleeping, we tested the top <a href="/best-white-noise-machine/">white noise machines</a>.
-For those who hate ear pressure, lightweight <a href="/best-headphone-for-sleeping/">sleep headphones</a> are a good alternative.
-Pair your night rest with a slow sunrise alarm, see our <a href="/best-wake-up-lights/">best wake-up lights</a>.
+
+        <!-- 统一相关链接 -->
+        <div class="related-links">
+            <p>If you want relaxing background sound while sleeping, we tested the top <a href="/best-white-noise-machine/">white noise machines</a>.</p>
+            <p>For those who hate ear pressure, lightweight <a href="/best-headphone-for-sleeping/">sleep headphones</a> are a good alternative.</p>
+            <p>Pair your night rest with a slow sunrise alarm, see our <a href="/best-wake-up-lights/">best wake-up lights</a>.</p>
+        </div>
     </div>
-    <footer style="margin-top:60px; padding:25px 10px; border-top:1px solid #eeeeee; text-align:center;">
-    <a href="/privacy-policy/" style="color:#222; text-decoration:none;">Privacy Policy</a>
-</footer>
+
+    <!-- 全站统一底部页脚 -->
+    <footer class="site-footer">
+        <a href="/privacy-policy/">Privacy Policy</a>
+    </footer>
 </body>
 </html>

@@ -25,6 +25,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             line-height: 1.6;
             padding: 30px 20px;
         }
+        .affiliate-notice {
+            background:#f7f9fa;
+            padding:12px 20px;
+            font-size:14px;
+            text-align:center;
+            border-bottom:1px solid #eee;
+            margin: -30px -20px 30px;
+        }
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -154,6 +162,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             background: #f9fafb;
+            min-height: 120px;
+            object-fit: cover;
         }
 
         .product-info {
@@ -278,14 +288,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .product-link:hover {
             background-color: #e68a00;
         }
+        .related-links {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed #ddd;
+            font-size: 0.9rem;
+        }
+        .related-links a {
+            color: #2563eb;
+        }
+        .related-links p {
+            margin: 6px 0;
+        }
 
-        .footer {
+        .page-footer {
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #e5e7eb;
             color: #9ca3af;
             font-size: 0.85rem;
+        }
+        .site-footer {
+            margin-top:60px; 
+            padding:25px 10px; 
+            border-top:1px solid #eeeeee; 
+            text-align:center;
+        }
+        .site-footer a {
+            color:#222; 
+            text-decoration:none;
         }
 
         /* 移动端适配 */
@@ -319,9 +351,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
 </head>
 <body>
-    <div style="background:#f7f9fa;padding:12px 20px;font-size:14px;text-align:center;border-bottom:1px solid #eee;">
+    <div class="affiliate-notice">
 This page contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases at no extra cost to you.
-</div>
+    </div>
  <div id="global-header"></div>
     <div class="container">
         <h1>The 5 Best Sunrise Alarm Clocks of 2026</h1>
@@ -576,17 +608,21 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                     <li>Wood effect is just plastic — looks basic in daylight</li>
                 </ul>
                 <a href="https://amzn.to/4vMWrQE" class="product-link" target="_blank" rel="sponsored nofollow">Check Price on Amazon →</a>
+                <!-- 修复：相关链接移出product容器，单独区块 -->
+                <div class="related-links">
+                    <p>Block annoying nighttime noise with our top-rated <a href="/best-earplugs-for-sleeping/">sleep earplugs</a>.</p>
+                    <p>To mask ambient sounds all night, browse our <a href="/best-white-noise-machine/">white noise machine buying guide</a>.</p>
+                    <p>If you like listening to audio without disturbing your partner, try <a href="/best-headphone-for-sleeping/">sleep headphones for sleeping</a>.</p>
+                </div>
             </div>
-            Block annoying nighttime noise with our top-rated <a href="/best-earplugs-for-sleeping/">sleep earplugs</a>.
-To mask ambient sounds all night, browse our <a href="/best-white-noise-machine/">white noise machine buying guide</a>.
-If you like listening to audio without disturbing your partner, try <a href="/best-headphone-for-sleeping/">sleep headphones for sleeping</a>.
         </div>
-        <div class="footer">
+
+        <div class="page-footer">
             <p>© 2026 zzzaid.com &nbsp;|&nbsp; As an Amazon Associate I earn from qualifying purchases.</p>
         </div>
     </div>
-    <footer style="margin-top:60px; padding:25px 10px; border-top:1px solid #eeeeee; text-align:center;">
-    <a href="/privacy-policy/" style="color:#222; text-decoration:none;">Privacy Policy</a>
-</footer>
+    <footer class="site-footer">
+        <a href="/privacy-policy/">Privacy Policy</a>
+    </footer>
 </body>
 </html>

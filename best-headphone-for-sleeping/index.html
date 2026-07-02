@@ -23,11 +23,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             background-color: #f5f6f8;
             color: #1a1a2e;
             line-height: 1.6;
-            padding: 30px 20px;
+        }
+        /* 联盟提示统一类 替换行间样式 */
+        .affiliate-notice {
+            background:#f7f9fa;
+            padding:12px 20px;
+            font-size:14px;
+            text-align:center;
+            border-bottom:1px solid #eee;
         }
         .container {
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 30px auto;
             background: white;
             padding: 40px 45px;
             border-radius: 12px;
@@ -151,9 +158,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .product-image img {
             max-width: 100%;
             height: auto;
+            min-height: 160px; /* 防止图片加载塌陷 */
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             background: #f9fafb;
+            object-fit: cover;
         }
 
         .product-info {
@@ -195,6 +204,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: 0.95rem;
             margin-bottom: 14px;
             line-height: 1.7;
+        }
+        /* 统一新增产品规格卡片 */
+        .product-specs {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 16px 0;
+            border: 1px solid #e2e8f0;
+        }
+        .product-specs h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+        .spec-row {
+            display: flex;
+            gap: 8px;
+            font-size: 0.9rem;
+            padding: 4px 0;
+        }
+        .spec-label {
+            width: 100px;
+            color: #6b7280;
+            font-weight: 500;
         }
 
         /* 优点列表 (绿色 ✓) */
@@ -258,7 +291,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             background-color: #e68a00;
         }
 
-        .footer {
+        /* 相关推荐链接容器 */
+        .related-links {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+        .related-links p {
+            margin: 8px 0;
+            font-size: 0.95rem;
+            color: #374151;
+        }
+        .related-links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .related-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* 文章内页脚 */
+        .page-footer {
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
@@ -266,14 +320,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             color: #9ca3af;
             font-size: 0.85rem;
         }
+        /* 全站底部统一页脚（与日出闹钟页面一致） */
+        .site-footer {
+            margin-top:60px;
+            padding:25px 10px;
+            border-top:1px solid #eeeeee;
+            text-align:center;
+        }
+        .site-footer a {
+            color:#222;
+            text-decoration:none;
+            font-size:0.9rem;
+        }
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
 
         /* 移动端适配 */
         @media (max-width: 700px) {
             .container {
                 padding: 20px 18px;
+                margin: 15px;
             }
             h1 {
                 font-size: 1.6rem;
+                text-align: center;
+            }
+            .page-subtitle {
+                text-align: center;
             }
             .product {
                 flex-direction: column;
@@ -290,15 +364,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
             .product-title {
                 font-size: 1.15rem;
+                text-align: center;
+                width: 100%;
+            }
+            .product-rating {
+                text-align: center;
+                display:block;
+            }
+            .product-link {
+                display:block;
+                text-align:center;
+            }
+            .spec-row {
+                flex-direction: column;
+                gap:2px;
+            }
+            .spec-label {
+                width: auto;
+            }
+            .related-links p {
+                text-align:center;
             }
         }
     </style>
 </head>
 <body>
-    <div style="background:#f7f9fa;padding:12px 20px;font-size:14px;text-align:center;border-bottom:1px solid #eee;">
+    <!-- 替换行间样式为统一class -->
+    <div class="affiliate-notice">
 This page contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases at no extra cost to you.
-</div>
- <div id="global-header"></div>
+    </div>
+    <div id="global-header"></div>
     <div class="container">
         <h1>The 5 Best Headphones For Sleep of 2026</h1>
         <p class="page-subtitle">
@@ -400,6 +495,22 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                 <div class="product-description">
                     The best balance of comfort, noise masking, and audio quality — the only dedicated sleep headphones with active noise cancellation.
                 </div>
+                <!-- 统一新增规格卡片 -->
+                <div class="product-specs">
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Type:</span>
+                        <span>In-Ear Sleep Buds</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Battery:</span>
+                        <span>9 Hours Streaming</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">ANC:</span>
+                        <span>Built-In Active Noise Cancellation</span>
+                    </div>
+                </div>
                 <ul class="pros-list">
                     <li>Active Noise Cancellation (ANC) — blocks out snoring, traffic, and TV noise</li>
                     <li>Combines ANC + passive isolation + app-based noise masking sounds for superior noise blocking</li>
@@ -428,6 +539,21 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                 <div class="product-description">
                     The smallest and most comfortable sleep earbuds — the top choice for side sleepers who prioritize comfort above all.
                 </div>
+                <div class="product-specs">
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Type:</span>
+                        <span>Mini In-Ear Sleep Buds</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Battery:</span>
+                        <span>10 Hours Local Playback</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">ANC:</span>
+                        <span>No ANC, Passive Isolation Only</span>
+                    </div>
+                </div>
                 <ul class="pros-list">
                     <li>Smallest and most comfortable sleep earbuds — rated 10/10 for back comfort, 9/10 for side comfort</li>
                     <li>Noise masking sounds engineered specifically to mask snoring — surprisingly effective</li>
@@ -455,6 +581,21 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                 <div class="product-rating">⭐⭐⭐⭐⭐ 4.6/5</div>
                 <div class="product-description">
                     Not technically sleep headphones, but included for their superb ANC — blocks snoring, TV, traffic, and talking with ease.
+                </div>
+                <div class="product-specs">
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Type:</span>
+                        <span>Universal Wireless Earbuds</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Battery:</span>
+                        <span>8 Hours Per Charge</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">ANC:</span>
+                        <span>Industry Leading ANC</span>
+                    </div>
                 </div>
                 <ul class="pros-list">
                     <li>Superb Active Noise Cancellation — rated 10/10 for noise masking</li>
@@ -485,6 +626,21 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                 <div class="product-description">
                     The best lower-cost alternative to SleepPhones — solid battery life and comfortable enough for side sleepers on a budget.
                 </div>
+                <div class="product-specs">
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Type:</span>
+                        <span>Soft Sleep Headband</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Battery:</span>
+                        <span>12 Hours Continuous Play</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">ANC:</span>
+                        <span>No Noise Cancellation</span>
+                    </div>
+                </div>
                 <ul class="pros-list">
                     <li>Affordable — best budget option for sleep headbands</li>
                     <li>Solid battery life — lasts all night even with loud music</li>
@@ -513,6 +669,21 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
                 <div class="product-description">
                     The predecessor to the A30 — longer battery life and lower price make it a solid budget alternative.
                 </div>
+                <div class="product-specs">
+                    <h4>Key Specs</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Type:</span>
+                        <span>Lightweight Sleep Buds</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Battery:</span>
+                        <span>14 Hours Max Playback</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">ANC:</span>
+                        <span>No ANC, Masking Sounds Only</span>
+                    </div>
+                </div>
                 <ul class="pros-list">
                     <li>Longer battery life than A30 — up to 10 hours streaming over Bluetooth</li>
                     <li>Lower price — great option for tighter budgets</li>
@@ -527,15 +698,22 @@ This page contains Amazon affiliate links. As an Amazon Associate I earn from qu
             </div>
         </div>
 
-        <div class="footer">
+        <!-- 文章内页脚 -->
+        <div class="page-footer">
             <p>© 2026 zzzaid.com &nbsp;|&nbsp; As an Amazon Associate I earn from qualifying purchases.</p>
         </div>
-        If snoring noise disturbs your rest, you can try <a href="/best-earplugs-for-sleeping/">sleep earplugs</a> for better noise blocking.
-For continuous soothing sound all night, our <a href="/best-white-noise-machine/">white noise machine reviews</a> can help you pick the right model.
-A gentle sunrise light can improve your sleep cycle, read our <a href="/best-wake-up-lights/">wake-up lights</a> guide.
+
+        <!-- 统一相关链接容器 -->
+        <div class="related-links">
+            <p>If snoring noise disturbs your rest, you can try <a href="/best-earplugs-for-sleeping/">sleep earplugs</a> for better noise blocking.</p>
+            <p>For continuous soothing sound all night, our <a href="/best-white-noise-machine/">white noise machine reviews</a> can help you pick the right model.</p>
+            <p>A gentle sunrise light can improve your sleep cycle, read our <a href="/best-wake-up-lights/">wake-up lights</a> guide.</p>
+        </div>
     </div>
-    <footer style="margin-top:60px; padding:25px 10px; border-top:1px solid #eeeeee; text-align:center;">
-    <a href="/privacy-policy/" style="color:#222; text-decoration:none;">Privacy Policy</a>
-</footer>
+
+    <!-- 全站统一底部页脚，与日出闹钟页面样式完全一致 -->
+    <footer class="site-footer">
+        <a href="/privacy-policy/">Privacy Policy</a>
+    </footer>
 </body>
 </html>
