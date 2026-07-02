@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 首页 -->
+  <url>
+    <loc>https://zzzaid.com/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 白噪音机页面 -->
+  <url>
+    <loc>https://zzzaid.com/best-white-noise-machine/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 睡眠耳机页面 -->
+  <url>
+    <loc>https://zzzaid.com/best-headphone-for-sleeping/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 睡眠耳塞页面 -->
+  <url>
+    <loc>https://zzzaid.com/best-earplugs-for-sleeping/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 隐私政策页面 -->
+  <url>
+    <loc>https://zzzaid.com/privacy-policy/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <priority>0.4</priority>
+  </url>
+</urlset>
