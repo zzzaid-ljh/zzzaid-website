@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# 禁止抓取无用后台/资源文件夹（静态站没有可删掉这两行）
+Disallow: /admin/
+Disallow: /assets/temp/
+
+# 提交你的站点地图地址
+Sitemap: https://zzzaid.com/sitemap.xml
